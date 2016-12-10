@@ -1,0 +1,26 @@
+<!DOCTYPE HTML> 
+        <head>
+            <title>Django Girls blog</title>
+        </head>
+        <body>
+        
+        <div>
+            <a href=""><h1>Django Girls Blog</h1></a>
+            <section> 
+            {% for articulo in milista %}
+                <article> 
+                    <h2><a href="">{{articulo.titulo}}</a></h2>
+                    <p>{{articulo.texto}}</p>
+                    <time>{{articulo.fecha_creacion}}</time>
+                </article> 
+            {% endfor %}
+
+            </section>
+
+
+
+        </div>
+    
+        </body>
+
+    </html>
